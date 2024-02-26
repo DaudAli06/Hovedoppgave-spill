@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?cs=srgb&dl=pexels-bella-white-635279.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+        .container {
+            text-align: center;
+        }
+
+        #playerText {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ccc;
+            font-size: 3em;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            background-color: rgba(238, 238, 238, 0.7); /* rgba-verdier med gjennomsiktighet 0.7 */
+            color: #666;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .box:hover {
+            background-color: #f0f0f0;
+        }
+
+        .box:active {
+            transform: scale(0.95);
+        }
+
+        .box.winner {
+    text-decoration: line-through;
+    text-decoration-color: red; /* Du kan endre fargen etter ønske */
+    
+}
+
+
+        #restartBtn {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #4e4caf;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #restartBtn:hover {
+            background-color: #45a049;
+        }
+
+        #scores {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 40 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#playerXScore, #playerOScore {
+    margin: 0;
+    padding: 0 10px;
+}
+
+#playerXScore {
+    margin-left: 0;
+}
+
+#playerOScore {
+    margin-right: 0;
+}
